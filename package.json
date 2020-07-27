@@ -19,6 +19,10 @@
   ],
   "author": "Alynx Zhou <alynx.zhou@gmail.com> (https://alynx.one/)",
   "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/AlynxZhou/hikaru-renderer-stylus-nib/issues"
+  },
+  "homepage": "https://github.com/AlynxZhou/hikaru-renderer-stylus-nib#readme",
   "dependencies": {
     "nib": "^1.1.2",
     "stylus": "^0.54.8"
