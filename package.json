@@ -1,6 +1,6 @@
 {
   "name": "hikaru-renderer-stylus-nib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stylus renderer plugin with nib for Hikaru.",
   "main": "index.js",
   "scripts": {
