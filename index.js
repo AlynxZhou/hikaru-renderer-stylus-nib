@@ -24,7 +24,6 @@ module.exports = (hikaru) => {
           }
           return res;
         });
-      }).use((style) => {
         style.define("getThemeConfig", (data) => {
           const keys = data["val"].toString().trim().split(".");
           let res = hikaru.site["themeConfig"];
@@ -36,18 +35,18 @@ module.exports = (hikaru) => {
           }
           return res;
         });
-      }).use((style) => {
-        style.define("siteConfig", this.site["siteConfig"]);
-      }).use((style) => {
-        style.define("themeConfig", this.site["themeConfig"]);
-      }).use((style) => {
         style.define("getPath", (data) => {
           return getPath(data["val"].toString().trim());
         });
-      }).use((style) => {
         style.define("getURL", (data) => {
           return getURL(data["val"].toString().trim());
         });
+        style.define("siteConfig", hikaru.site["siteConfig"]);
+        style.define("themeConfig", hikaru.site["themeConfig"]);
+        style.define("srcDir", file["srcDir"]);
+        style.define("srcPath", file["srcPath"]);
+        style.define("docDir", file["docDir"]);
+        style.define("docPath", file["docPath"]);
       }).set("filename", path.join(
         hikaru.site["siteConfig"]["themeSrcDir"], file["srcPath"]
       )).set("sourcemap", stylConfig["sourcemap"])
