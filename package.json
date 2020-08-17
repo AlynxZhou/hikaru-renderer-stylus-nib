@@ -4,7 +4,8 @@
   "description": "Stylus renderer plugin with nib for Hikaru.",
   "main": "index.js",
   "scripts": {
-    "test": "standardx"
+    "test": "standardx",
+    "preversion": "npm test"
   },
   "repository": {
     "type": "git",
